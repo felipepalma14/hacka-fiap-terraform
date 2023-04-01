@@ -15,12 +15,12 @@ variable "storage_type" {
 }
 variable "username" {
   description = "Username for the master DB user."
-  default = "hackaton_user"
+  default = "root"
   type = string
 }
 variable "password" {
   description = "password of the database"
-  default = "password"
+  default = "Fiap1234"
   type = string
 }
 variable "instance_class" {
@@ -61,5 +61,5 @@ variable "name" {
 
 variable "private_subnets" {
     type = list(string)
-    default = ["subnet-018abb614ae38dc0a", "subnet-0bef0629f7dc22820"]
+    default = ["sg-0b657bb7c25da9b14", "subnet-0aca6d2aa6c90592a"]
 }
