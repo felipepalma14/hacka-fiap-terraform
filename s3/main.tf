@@ -1,10 +1,10 @@
 # Create an S3 bucket for the website content
 resource "aws_s3_bucket" "website" {
-  bucket = "fiap-hackaton-bucket"
+  bucket = "fiap-hackaton"
 }
 
 resource "aws_s3_bucket" "website-logging-bucket" {
-  bucket = "fiap-hackaton-bucket-logging-bucket"
+  bucket = "fiap-hackaton-logging-bucket"
 }
 
 resource "aws_s3_bucket_website_configuration" "website_configuration" {
